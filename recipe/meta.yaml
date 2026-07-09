@@ -11,7 +11,7 @@ source:
 
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -23,7 +23,6 @@ requirements:
     - python
     - pip
     - numpy
-    - pytest-runner
   run:
     - python
     - click
@@ -38,13 +37,8 @@ requirements:
     - pyyaml
     - sortedcontainers
     - scipy
-    - toolz
     - xarray
-    - numba
     - zarr
-    - attrdict
-    - decorator
-    - importlib-metadata
 
 test:
   imports:
