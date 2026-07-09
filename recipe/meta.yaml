@@ -1,5 +1,5 @@
 {% set name = "wavespectra" %}
-{% set version = "4.5.1" %}
+{% set version = "4.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e51a75833ea19e32394931cfa7ee4a7fb7b3b353f184e2b39bbfd4918a57c4e1
+  sha256: acc91ad29192d2876e9138ff20f775fa2a74b528611f454c3dacc3ef7c87e5e3
 
 
 build:
