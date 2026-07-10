@@ -22,6 +22,11 @@ requirements:
   host:
     - python
     - pip
+    # pyproject.toml sets build-backend = "setuptools.build_meta" with
+    # requires = ["numpy", "setuptools"]. setuptools used to arrive implicitly
+    # via pytest-runner and via pip, but pip's python>=3.13 build no longer
+    # depends on it, so it must be requested explicitly.
+    - setuptools
     - numpy
   run:
     - python
